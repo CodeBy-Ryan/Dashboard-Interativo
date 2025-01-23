@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard Interativo com gráficos e tabelas dinâmicas, desenvolvido em HTML, CSS e JavaScript.">
+  <title>Dashboard Interativo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <h1>Dashboard Interativo</h1>
+      <p>Visualize e interaja com dados fictícios de forma dinâmica.</p>
+    </div>
+  </header>
+
+  <!-- Filtros -->
+  <section id="filters" class="container">
+    <h2>Filtros</h2>
+    <div class="filter-group">
+      <label for="year">Selecione o Ano:</label>
+      <select id="year" name="year">
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="category">Categoria:</label>
+      <select id="category" name="category">
+        <option value="all">Todas</option>
+        <option value="A">Categoria A</option>
+        <option value="B">Categoria B</option>
+        <option value="C">Categoria C</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Gráficos -->
+  <section id="charts" class="container">
+    <h2>Gráficos</h2>
+    <div class="chart-wrapper">
+      <canvas id="barChart"></canvas>
+    </div>
+    <div class="chart-wrapper">
+      <canvas id="lineChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Tabela -->
+  <section id="data-table" class="container">
+    <h2>Tabela de Dados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Valor</th>
+          <th>Ano</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dados serão inseridos dinamicamente -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dashboard Interativo. Desenvolvido por <strong>Ryan Rodrigues</strong>.</p>
+      <p>
+        <a href="mailto:ryanrodrigues9890@gmail.com">Contato</a> | 
+        <a href="https://codebyryan.vercel.app/" target="_blank">Portfólio</a> | 
+        <a href="https://github.com/CodeBy-Ryan" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
